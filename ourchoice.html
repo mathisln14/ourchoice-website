@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Choice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Oswald', sans-serif;
+      box-sizing: border-box;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #eee;
+    }
+    header img.logo {
+      height: 60px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    section {
+      padding: 60px;
+    }
+    .hero {
+      position: relative;
+      background: url('https://i.imgur.com/uq7zfwY.jpeg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 60px;
+      color: white;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 4em;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+    .hero a {
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+    .product h3 {
+      margin: 10px 0;
+    }
+    .product p {
+      font-size: 0.9em;
+    }
+    .add-to-cart {
+      margin-top: 10px;
+      display: inline-block;
+      background: black;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/7OBzjdw.png" alt="Our Choice logo" class="logo">
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#histoire">Notre histoire</a>
+      <a href="#chaussures">Chaussures</a>
+      <a href="#vetements">Vêtements</a>
+      <a href="#panier">Panier</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="accueil">
+    <div class="hero-text">
+      <p>Jannik Sinner</p>
+      <h1>LA VICTOIRE DANS LE SANG</h1>
+      <p>Des performances dignes des athlètes d'élite.</p>
+      <a href="#chaussures">Acheter</a>
+    </div>
+  </section>
+
+  <section id="histoire">
+    <h2>Notre Histoire</h2>
+    <p>Inspirée par Allyson Felix, Our Choice est une marque qui soutient l'émancipation des femmes à travers le sport. Nous croyons en la performance, la liberté de choix et le respect de soi. Fondée pour offrir des produits techniques, éthiques et stylés, la marque s'adresse à toutes les femmes actives, de tous horizons.</p>
+  </section>
+
+  <section id="chaussures">
+    <h2>Chaussures de sport pour femme</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://i.imgur.com/7nUehzW.jpeg" alt="Chaussure 1">
+        <h3>Runner One</h3>
+        <p>Confort ultime pour vos séances quotidiennes.</p>
+        <a href="#panier" class="add-to-cart">Ajouter au panier</a>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/nkzjWz9.jpeg" alt="Chaussure 2">
+        <h3>Urban Sprint</h3>
+        <p>Performance et style réunis dans une chaussure éco-conçue.</p>
+        <a href="#panier" class="add-to-cart">Ajouter au panier</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="vetements">
+    <h2>Vêtements de sport pour femme</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://i.imgur.com/61HJP6X.jpeg" alt="Legging">
+        <h3>Power Legging</h3>
+        <p>Un legging sculptant et respirant pour toutes vos activités.</p>
+        <a href="#panier" class="add-to-cart">Ajouter au panier</a>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/oXhLsll.jpeg" alt="Brassière">
+        <h3>Move Bra</h3>
+        <p>Soutien, confort et style : l'essentiel pour vos entraînements.</p>
+        <a href="#panier" class="add-to-cart">Ajouter au panier</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="panier">
+    <h2>Votre panier</h2>
+    <p>Votre panier est vide.</p>
+    <p><em>(La fonctionnalité de panier dynamique peut être ajoutée avec JavaScript plus tard.)</em></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Our Choice — The truth of hers, truth us, truth you.</p>
+  </footer>
+</body>
+</html>
