@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,8 +83,16 @@
         <option value="41">EU 41</option>
       </select>
       <br>
-      <button>Add to Cart</button>
+      <button onclick="addToCart()">Add to Cart</button>
     </div>
   </div>
+
+  <script>
+    function addToCart() {
+      const size = document.getElementById('size').value;
+      const url = `index.html?product=Runner+One&size=${size}`;
+      window.location.href = url;
+    }
+  </script>
 </body>
 </html>
